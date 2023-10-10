@@ -1,0 +1,39 @@
+:root {
+    --teal: #6aa3e0; /* Define a custom teal color variable */
+}
+
+nav {
+    background: var(--teal); /* Use the custom teal color */
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem 1.7rem;
+    position: fixed;
+    z-index: 999; /* Adjust the z-index value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a {
+    background: rgba(255, 255, 255, 0.7); /* Lighter background color */
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--teal); /* Text color matching the teal background */
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.9); /* Slightly lighter on hover */
+}
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.9); /* Active state color */
+    color: var(--teal); /* Text color matching the teal background */
+}
+
